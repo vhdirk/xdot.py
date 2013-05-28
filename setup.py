@@ -1,9 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from setuptools import setup
 
 setup(
     name='xdot',
-    version='0.4',
+    version='0.5',
     author='Jose Fonseca',
     author_email='jose.r.fonseca@gmail.com',
     url='http://code.google.com/p/jrfonseca/wiki/XDot',
@@ -13,7 +13,7 @@ setup(
         language.
 
         It uses internally the graphviz's xdot output format as an intermediate
-        format, and PyGTK and Cairo for rendering.
+        format, and PyGi and Cairo for rendering.
 
         xdot.py can be used either as a standalone application from command
         line, or as a library embedded in your python application.
@@ -24,5 +24,5 @@ setup(
     entry_points=dict(gui_scripts=['xdot=xdot:main']),
 
     # This is true, but pointless, because easy_install PyGTK chokes and dies
-    #install_requires=['PyGTK', 'pycairo'],
+    #install_requires=['', 'pycairo'],
 )
