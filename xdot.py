@@ -31,6 +31,7 @@ import math
 import colorsys
 import time
 import re
+from math import floor
 
 import gi
 from gi.repository import GLib, GObject, Gtk, Gdk, GdkPixbuf, cairo, Pango, PangoCairo
@@ -523,7 +524,7 @@ class XDotAttrParser(object):
         return res
 
     def read_number(self):
-        return int(self.read_code())
+        return (int(floor(float(self.read_code()))))
 
     def read_float(self):
         return float(self.read_code())
